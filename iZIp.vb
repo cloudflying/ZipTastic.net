@@ -7,4 +7,5 @@ Public Class iZip
     Public Property _State As String
     <JsonProperty("country")> _
     Public Property Country As String
+    Public Property zipCode As String
 End Class
