@@ -8,4 +8,5 @@ Public Class iZip
     <JsonProperty("country")> _
     Public Property Country As String
     Public Property zipCode As String
+    Public Property _stateAbbr As String
 End Class
