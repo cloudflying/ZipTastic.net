@@ -35,6 +35,7 @@ Public Class getZipInfo
             Dim str As String = sendReq(zipCode, country)
             Dim zipData As iZip = JsonConvert.DeserializeObject(Of iZip)(str)
             If getAbbr = True And LCase(country) = "us" Then zipData = DetermineStateAbbr(zipData)
+            zipData.zipCode = zipCode
             Return zipData
         Catch ex As Exception
             Throw New ApplicationException("An error occurred retrieving your city and state information")
