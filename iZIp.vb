@@ -9,4 +9,5 @@ Public Class iZip
     Public Property Country As String
     Public Property zipCode As String
     Public Property _stateAbbr As String
+    Public Property state_short As String
 End Class

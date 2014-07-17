@@ -78,6 +78,7 @@ Public Class getZipInfo
         states.Add("Connecticut", "CT")
         states.Add("Delaware", "DE")
         states.Add("Dist of Columbia", "DC")
+        states.Add("District of Columbia", "DC")
         states.Add("Florida", "FL")
         states.Add("Georgia", "GA")
         states.Add("Hawaii", "HI")
