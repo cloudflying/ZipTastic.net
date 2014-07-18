@@ -1,13 +1,11 @@
 ﻿Imports Newtonsoft.Json
 Public Class iZip
-    ' {"city": "Central Village", "state": "Connecticut", "country": "US"}
-    <JsonProperty("city")> _
-    Public Property City As String
-    <JsonProperty("state")> _
-    Public Property _State As String
-    <JsonProperty("country")> _
-    Public Property Country As String
+    ' {"city": "Owosso", "country": "US", "county": "Shiawassee", "state": "Michigan", "state_short": "MI", "postal_code": "48867"}
+    Public Property city As String
+    Public Property [state] As String
+    Public Property country As String
+    Public Property county As String
     Public Property zipCode As String
-    Public Property _stateAbbr As String
     Public Property state_short As String
+    Public Property _stateAbbr As String
 End Class

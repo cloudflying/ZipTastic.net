@@ -9,9 +9,12 @@ Public Class getZipInfo
     ' #### Created by Justin Porter
     ' #### Attribution 3.0 Unported (CC BY 3.0) 
     ' #### License: http://creativecommons.org/licenses/by/3.0/
-    ' #### Please link to this article: http://www.stupidcodetricks.com/net-framework/intermediate/ziptastic-net-class-library/
     ' #### view us on github: https://github.com/cloudflying/ZipTastic.net
     ' #### Enjoy!
+
+    ' #### update July 2014
+    ' #### Add State / State_short as new options
+    ' #### Change Server URL 
 
     ' #### version 1.1 updates
     ' #### added zipCode and _stateAbbr to the iZip property sheet
@@ -40,7 +43,6 @@ Public Class getZipInfo
         Catch ex As Exception
             Throw New ApplicationException("An error occurred retrieving your city and state information")
         End Try
-
     End Function
 
 
@@ -61,8 +63,8 @@ Public Class getZipInfo
 
     Private Function DetermineStateAbbr(zipData As iZip) As iZip
         Dim states As Hashtable = BuildStates()
-        If Len(zipData._State) > 0 Then
-            zipData._stateAbbr = states(zipData._State)
+        If Len(zipData.state) > 0 Then
+            zipData._stateAbbr = states(zipData.state)
         End If
         Return zipData
     End Function
