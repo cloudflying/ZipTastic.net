@@ -3,6 +3,13 @@ Ziptastic.net Class Library
 
 Welcome to the ZipTastic .net Class Library. 
 
+**Version 1.1 to 1.2 Upgrade Alert**  
+If you were using version 1.1 and upgrade to this version there are breaking changes that have occurred. 
+
+    _state is no longer available. 
+    state is now the officially supported option.
+
+
 **Installation**   
 You can now install ZipTastic.net using NuGet. Use the search box to search for ZipTastic.net or use the code below:   
 
