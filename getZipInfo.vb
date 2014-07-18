@@ -47,7 +47,7 @@ Public Class getZipInfo
 
 
     Private Function sendReq(zipCode As String, country As String) As String
-        Dim uri As String = "http://zip.elevenbasetwo.com/v2/" & country & "/" & zipCode
+        Dim uri As String = "http://zip.getziptastic.com/v2/" & country & "/" & zipCode
         Dim request As HttpWebRequest = HttpWebRequest.Create(uri)
         request.Method = WebRequestMethods.Http.Get
         request.ContentType = "text/html"
